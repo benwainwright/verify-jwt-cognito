@@ -9,7 +9,7 @@ import jsdoc from "eslint-plugin-jsdoc";
 
 export default [
   {
-    ignores: ["dist", "coverage", "tmp-declarations", "api", "temp"],
+    ignores: ["dist", "coverage", "tmp-declarations", "api", "temp", "docs"],
   },
   {
     files: ["**/*.js", "**/*.ts"],

@@ -1,6 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "ES2017"
+    "paths": {
+      "@lib": ["src/lib/index.js"],
+      "@types": ["src/types/index.js"],
+      "@this-package": ["src/lib/index.js"],
+      "/Users/benwainwright1/repos/verify-jwt-cognito/dist/index": [
+        "src/lib/index.js"
+      ]
+    }
   }
 }

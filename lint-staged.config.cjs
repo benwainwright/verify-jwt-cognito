@@ -17,7 +17,7 @@ module.exports = {
       `tsc-files --noEmit ${fileList}`,
       `node_modules/.bin/eslint ${fileList}`,
       `prettier --write ${fileList}`,
-      `node_modules/.bin/typescript-docs-verifier ${files
+      `node_modules/.bin/typescript-docs-verifier --project tsconfig.docs-verifier.json ${files
         .map((file) => `--input-file ${file}`)
         .join(" ")}`,
     ];

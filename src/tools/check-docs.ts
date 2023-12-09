@@ -16,13 +16,13 @@ const run = async () => {
     })
     .walk(process.cwd());
 
-  const project = "tsconfig.json";
+  const project = "tsconfig.docs-verifier.json";
   const results = await compileSnippets({ markdownFiles, project });
   results.forEach((result) => {
     if (result.error) {
       returnCode = 1;
       console.log(
-        `Error compiling example code block ${result.index} in file ${result.file}`,
+        `Error compiling example code block ${result.index} in file ${result.file}`
       );
       console.log(result.error.message);
       console.log("Original code:");

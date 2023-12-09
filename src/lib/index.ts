@@ -1,2 +1,1 @@
-export { functionOne } from "@subpackageOne";
-export { functionTwo } from "@subpackageTwo";
+export { verifyJwtToken } from "./verify-jwt.js";

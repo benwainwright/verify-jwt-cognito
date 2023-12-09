@@ -13,8 +13,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {
-      "@subpackageOne": ["src/lib/subpackageOne/index.js"],
-      "@subpackageTwo": ["src/lib/subpackageTwo/index.js"],
+      "@lib": ["src/lib/index.js"],
+      "@types": ["src/types/index.js"],
       "@this-package": ["src/lib/index.js"]
     }
   },
